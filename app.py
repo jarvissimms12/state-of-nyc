@@ -159,7 +159,12 @@ with tab_studies:
         ("02_absence_early_warning", "2. Early warning for rising chronic absence", ["early_warning.png"]),
         ("04_shelter_and_schools", "4. NYC's shelter population and its schools",
          ["shelter_census_trend.png", "shelter_vs_absence_gap.png"]),
+        ("05_city_job_postings", "5. How long city government jobs stay open", ["postings_age_by_agency.png"]),
+        ("06_311_response_equity", "6. Same problem, different wait: 311 response times", ["response_equity.png"]),
+        ("07_asthma_and_housing", "7. Children's asthma and the homes they live in", ["asthma_vs_triggers_and_air.png"]),
+        ("09_child_seizures_environment", "9. Children's seizures and their environment (lead)", ["lead_exposure.png"]),
         ("03_hospital_length_of_stay", "3. Hospital length of stay (real-data run pending)", []),
+        ("08_hospital_charges_costs", "8. Hospital charges vs costs (real-data run pending)", []),
     ]
     for folder, title, images in STUDIES:
         d = ROOT / "studies" / folder

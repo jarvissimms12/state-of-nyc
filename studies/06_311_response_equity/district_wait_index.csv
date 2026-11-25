@@ -1,0 +1,60 @@
+cd,district,cd_name,borough,housing_distress_index,wait_index,types,poverty_pct
+101,Manhattan CD 1,"Battery Park City, Tribeca",Manhattan,-2.0202,-0.2912,8,6.09
+102,Manhattan CD 2,"Greenwich Village, Soho",Manhattan,-1.1737,-0.5089,9,7.62
+103,Manhattan CD 3,"Lower East Side, Chinatown",Manhattan,-0.605,-0.2166,9,24.48
+104,Manhattan CD 4,"Chelsea, Clinton",Manhattan,-0.6116,-0.1939,9,12.29
+105,Manhattan CD 5,Midtown Business District,Manhattan,-1.1087,-0.2985,9,12.8
+106,Manhattan CD 6,"Stuyvesant Town, Turtle Bay",Manhattan,-1.3864,-0.1507,9,8.44
+107,Manhattan CD 7,"West Side, Upper West Side",Manhattan,-0.7594,-0.4654,9,11.01
+108,Manhattan CD 8,Upper East Side,Manhattan,-1.2761,0.1662,9,7.3
+109,Manhattan CD 9,"Manhattanville, Hamilton Heights",Manhattan,0.7763,-0.2109,9,24.94
+110,Manhattan CD 10,Central Harlem,Manhattan,1.2174,-0.2103,9,23.88
+111,Manhattan CD 11,East Harlem,Manhattan,0.3885,-0.236,9,31.67
+112,Manhattan CD 12,"Washington Heights, Inwood",Manhattan,1.2467,-0.0544,9,17.21
+201,Bronx CD 1,"Melrose, Mott Haven, Port Morris",Bronx,0.9096,0.1894,9,39.56
+202,Bronx CD 2,"Hunts Point, Longwood",Bronx,1.457,0.0569,9,32.41
+203,Bronx CD 3,"Morrisania, Crotona Park East",Bronx,1.3219,0.1596,9,37.0
+204,Bronx CD 4,"Highbridge, Concourse Village",Bronx,1.6533,0.0015,9,32.16
+205,Bronx CD 5,"University Hts., Fordham, Mt. Hope",Bronx,1.5726,-0.1183,9,32.95
+206,Bronx CD 6,"East Tremont, Belmont",Bronx,1.6216,0.074,9,38.64
+207,Bronx CD 7,"Bedford Park, Norwood, Fordham",Bronx,1.6112,0.1289,9,26.64
+208,Bronx CD 8,"Riverdale, Kingsbridge, Marble Hill",Bronx,0.7285,0.0005,9,17.61
+209,Bronx CD 9,"Soundview, Parkchester",Bronx,0.8657,0.0688,9,26.18
+210,Bronx CD 10,"Throgs Nk., Co-op City, Pelham Bay",Bronx,0.0306,0.2329,9,14.24
+211,Bronx CD 11,"Pelham Pkwy, Morris Park, Laconia",Bronx,0.7137,-0.1476,9,17.67
+212,Bronx CD 12,"Wakefield, Williamsbridge",Bronx,1.203,-0.057,9,20.11
+301,Brooklyn CD 1,"Williamsburg, Greenpoint",Brooklyn,-0.6238,-0.078,9,21.66
+302,Brooklyn CD 2,"Brooklyn Heights, Fort Greene",Brooklyn,-1.0557,-0.0266,9,12.21
+303,Brooklyn CD 3,Bedford Stuyvesant,Brooklyn,0.2668,0.0241,9,25.48
+304,Brooklyn CD 4,Bushwick,Brooklyn,0.3263,-0.1042,9,21.23
+305,Brooklyn CD 5,"East New York, Starrett City",Brooklyn,0.6131,-0.0615,9,23.29
+306,Brooklyn CD 6,"Park Slope, Carroll Gardens",Brooklyn,-1.1072,0.0958,9,8.68
+307,Brooklyn CD 7,"Sunset Park, Windsor Terrace",Brooklyn,-0.3119,0.0878,9,18.7
+308,Brooklyn CD 8,Crown Heights North,Brooklyn,0.6472,0.0318,9,16.89
+309,Brooklyn CD 9,"Crown Heights South, Wingate",Brooklyn,0.8879,-0.007,9,17.72
+310,Brooklyn CD 10,"Bay Ridge, Dyker Heights",Brooklyn,-0.39,-0.0006,9,14.08
+311,Brooklyn CD 11,"Bensonhurst, Bath Beach",Brooklyn,-0.3108,0.0064,9,18.23
+312,Brooklyn CD 12,"Borough Park, Ocean Parkway",Brooklyn,-0.3095,0.009,9,24.51
+313,Brooklyn CD 13,"Coney Island, Brighton Beach",Brooklyn,-0.2532,-0.0611,9,24.29
+314,Brooklyn CD 14,"Flatbush, Midwood",Brooklyn,0.8786,0.0196,9,15.78
+315,Brooklyn CD 15,"Sheepshead Bay, Gerritsen Beach",Brooklyn,-0.4563,0.0685,9,15.6
+316,Brooklyn CD 16,"Brownsville, Ocean Hill",Brooklyn,0.6998,0.0028,9,32.74
+317,Brooklyn CD 17,"East Flatbush, Rugby, Farragut",Brooklyn,1.0382,-0.1257,9,16.23
+318,Brooklyn CD 18,"Canarsie, Flatlands",Brooklyn,-0.6532,0.0216,9,11.7
+401,Queens CD 1,"Astoria, Long Island City",Queens,-0.3807,-0.0695,9,12.44
+402,Queens CD 2,"Sunnyside, Woodside",Queens,-0.388,0.0165,9,9.45
+403,Queens CD 3,"Jackson Heights, North Corona",Queens,0.1573,-0.177,9,14.79
+404,Queens CD 4,"Elmhurst, South Corona",Queens,0.2854,-0.1323,9,14.77
+405,Queens CD 5,"Ridgewood, Glendale, Maspeth",Queens,-0.621,-0.1079,9,11.04
+406,Queens CD 6,"Forest Hills, Rego Park",Queens,-0.2187,-0.172,9,10.21
+407,Queens CD 7,"Flushing, Bay Terrace",Queens,-0.6631,-0.0642,9,15.16
+408,Queens CD 8,"Fresh Meadows, Briarwood",Queens,-0.0389,0.0104,9,11.78
+409,Queens CD 9,"Woodhaven, Richmond Hill",Queens,-0.1759,-0.0054,9,11.21
+410,Queens CD 10,"Ozone Park, Howard Beach",Queens,-0.573,-0.0607,9,10.18
+411,Queens CD 11,"Bayside, Douglaston, Little Neck",Queens,-1.5872,0.054,9,8.26
+412,Queens CD 12,"Jamaica, St. Albans, Hollis",Queens,0.1011,-0.1659,9,12.55
+413,Queens CD 13,"Queens Village, Rosedale",Queens,-0.7806,-0.0217,9,8.32
+414,Queens CD 14,"The Rockaways, Broad Channel",Queens,0.2756,-0.0812,9,19.67
+501,Staten Island CD 1,"Stapleton, Port Richmond",Staten Island,0.0279,-0.1417,9,15.88
+502,Staten Island CD 2,"New Springville, South Beach",Staten Island,-1.6051,-0.1004,9,10.48
+503,Staten Island CD 3,"Tottenville, Woodrow, Great Kills",Staten Island,-2.078,-0.0548,9,5.99

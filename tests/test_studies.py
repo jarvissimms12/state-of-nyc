@@ -77,3 +77,53 @@ def test_study_results_exist(study, key):
     if not p.exists():
         pytest.skip("run the study first")
     assert key in json.loads(p.read_text())
+
+
+# ---- Studies 8 and 9 (SPARCS modules): recover planted effects on synthetic data
+@pytest.fixture(scope="module")
+def synthetic_sparcs(tmp_path_factory):
+    d = tmp_path_factory.mktemp("sparcs")
+    csv = d / "syn.csv"
+    subprocess.run([sys.executable, str(STUDIES / "03_hospital_length_of_stay" / "make_synthetic.py"),
+                    str(csv), "80000"], check=True)
+    return csv
+
+
+def test_charges_costs_finds_planted_markup_and_cost_outlier(synthetic_sparcs, tmp_path):
+    mod = load(STUDIES / "08_hospital_charges_costs" / "run.py")
+    mod.main(str(synthetic_sparcs), str(tmp_path))
+    h = pd.read_csv(tmp_path / "hospital_charges_costs.csv").set_index("facility_id")
+    assert h["markup"].idxmax() == "H_MARKUP"
+    assert h.loc["H_MARKUP", "markup"] / h["markup"].median() > 1.8          # planted 2x
+    assert h.loc["H_COSTLY", "cost_flag"] == "above"                          # planted +40% cost
+    normal = h[~h.index.str.startswith("H_")]
+    assert (normal["cost_flag"] != "within").sum() <= 2                       # few false flags
+
+
+def test_pediatric_seizure_module_recovers_bronx_effect(synthetic_sparcs, tmp_path):
+    mod = load(STUDIES / "09_child_seizures_environment" / "seizures_sparcs.py")
+    res = mod.main(str(synthetic_sparcs), str(tmp_path))
+    share = {r["borough"]: r["seizure_share_of_pediatric_stays"] for r in res["by_borough"]}
+    assert share["Bronx"] > 1.6 * max(v for b, v in share.items() if b != "Bronx")   # planted 2x
+    assert "110" not in mod.ZIP3_BOROUGH                                       # Nassau excluded
+
+
+def test_neighborhood_point_assignment():
+    mod = load(STUDIES / "09_child_seizures_environment" / "run.py")
+    from shapely.geometry import box
+    import numpy as np
+    polys = [(1, box(0, 0, 1, 1)), (2, box(1, 0, 2, 1))]
+    got = mod.assign(np.array([0.5, 1.5, 5.0, np.nan]), np.array([0.5, 0.5, 5.0, 0.5]), polys)
+    assert got.tolist() == [1, 2, 0, 0]
+
+
+def test_job_id_existence_bound():
+    mod = load(STUDIES / "05_city_job_postings" / "run.py")
+    df = pd.DataFrame({
+        "job_id": ["100", "200", "150"],
+        "posting_date": pd.to_datetime(["2026-03-10", "2026-03-15", "2026-11-20"]),
+        "process_date": pd.to_datetime(["2026-11-24"] * 3),
+    })
+    bound = mod.created_by_bound(df)
+    # job 150 is re-dated Nov 20, but job 200 was posted in March, so 150 existed by end of March
+    assert bound.iloc[2] <= pd.Timestamp("2026-03-31")

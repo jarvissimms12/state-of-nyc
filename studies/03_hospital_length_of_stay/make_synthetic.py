@@ -48,5 +48,26 @@ df = pd.DataFrame({
     "Payment Typology 1": payer, "Emergency Department Indicator": rng.choice(["Y", "N"], N),
     "CCSR Diagnosis Code": rng.choice([f"CIR{i:03d}" for i in range(30)], N),
 })
+# --- extra columns for Studies 8 and 9 (drawn after everything above, so the
+# Study 3 columns are identical with or without them) ---------------------
+# Study 9: residence ZIP3 and diagnosis text; Bronx children get twice the seizure share
+zip3 = rng.choice(["100", "104", "112", "113", "103", "110"], N, p=[0.18, 0.2, 0.3, 0.2, 0.06, 0.06])
+bronx = zip3 == "104"
+seizure = rng.random(N) < np.where(bronx, 0.08, 0.04)
+df["Zip Code - 3 digits"] = zip3
+df["Age Group"] = np.where(rng.random(N) < 0.3, "0 to 17", df["Age Group"].where(df["Age Group"] != "0 to 17", "18 to 29"))
+df["CCSR Diagnosis Description"] = np.where(seizure, "Seizure",
+                                            rng.choice(["Asthma", "Pneumonia", "Sepsis", "Heart failure"], N))
+df["APR Severity of Illness Description"] = pd.Series(sev).map({"1": "Minor", "2": "Moderate", "3": "Major", "4": "Extreme"})
+# Study 8: costs scale with LOS; charges = cost x hospital markup.
+# H_MARKUP charges 2x the usual markup; H_COSTLY has 40% higher costs per case.
+hospitals_extra = np.where(rng.random(N) < 0.04, "H_MARKUP", np.where(rng.random(N) < 0.04, "H_COSTLY", h))
+df["Permanent Facility Id"] = hospitals_extra
+df["Facility Name"] = [f"Hospital {x}" for x in hospitals_extra]
+cost = los * 3000 * rng.lognormal(0, 0.25, N) * np.where(hospitals_extra == "H_COSTLY", 1.4, 1.0)
+markup = 3.0 * rng.lognormal(0, 0.1, N) * np.where(hospitals_extra == "H_MARKUP", 2.0, 1.0)
+df["Total Costs"] = np.round(cost, 2)
+df["Total Charges"] = np.round(cost * markup, 2)
+
 df.to_csv(sys.argv[1] if len(sys.argv) > 1 else "synthetic.csv", index=False)
 print(f"wrote {len(df):,} rows")

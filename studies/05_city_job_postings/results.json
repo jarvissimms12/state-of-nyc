@@ -1,0 +1,432 @@
+{
+  "snapshot_date": "2026-11-24",
+  "snapshot_saved": "data/snapshots/job_postings_2026-11-24.csv.gz",
+  "snapshots_available": 1,
+  "open_postings": 1382,
+  "open_positions": 3909,
+  "median_days_since_posted": 25.0,
+  "p99_days_since_posted": 59.190000000000055,
+  "share_reposted": 0.308,
+  "median_days_in_pipeline_min": 41.0,
+  "share_in_pipeline_90plus": 0.196,
+  "share_in_pipeline_180plus": 0.08,
+  "by_agency_longest": [
+    {
+      "agency": "ADMIN FOR CHILDREN'S SVCS",
+      "postings": 15,
+      "positions": 108,
+      "median_days_since_posted": 18.0,
+      "median_days_in_pipeline_min": 238.0,
+      "share_reposted": 0.867,
+      "share_in_pipeline_180plus": 0.733
+    },
+    {
+      "agency": "DEPARTMENT FOR THE AGING",
+      "postings": 21,
+      "positions": 21,
+      "median_days_since_posted": 14.0,
+      "median_days_in_pipeline_min": 116.0,
+      "share_reposted": 0.667,
+      "share_in_pipeline_180plus": 0.238
+    },
+    {
+      "agency": "OFFICE OF THE MAYOR",
+      "postings": 67,
+      "positions": 72,
+      "median_days_since_posted": 28.0,
+      "median_days_in_pipeline_min": 55.0,
+      "share_reposted": 0.478,
+      "share_in_pipeline_180plus": 0.149
+    },
+    {
+      "agency": "NYC HOUSING AUTHORITY",
+      "postings": 44,
+      "positions": 828,
+      "median_days_since_posted": 14.0,
+      "median_days_in_pipeline_min": 55.0,
+      "share_reposted": 0.477,
+      "share_in_pipeline_180plus": 0.091
+    },
+    {
+      "agency": "HRA/DEPT OF SOCIAL SERVICES",
+      "postings": 79,
+      "positions": 134,
+      "median_days_since_posted": 34.0,
+      "median_days_in_pipeline_min": 55.0,
+      "share_reposted": 0.38,
+      "share_in_pipeline_180plus": 0.101
+    },
+    {
+      "agency": "DEPT OF HEALTH/MENTAL HYGIENE",
+      "postings": 266,
+      "positions": 490,
+      "median_days_since_posted": 27.0,
+      "median_days_in_pipeline_min": 54.0,
+      "share_reposted": 0.383,
+      "share_in_pipeline_180plus": 0.113
+    },
+    {
+      "agency": "DISTRICT ATTORNEY-MANHATTAN",
+      "postings": 21,
+      "positions": 35,
+      "median_days_since_posted": 46.0,
+      "median_days_in_pipeline_min": 50.0,
+      "share_reposted": 0.286,
+      "share_in_pipeline_180plus": 0.048
+    },
+    {
+      "agency": "BRONX DISTRICT ATTORNEY",
+      "postings": 68,
+      "positions": 348,
+      "median_days_since_posted": 27.0,
+      "median_days_in_pipeline_min": 49.0,
+      "share_reposted": 0.353,
+      "share_in_pipeline_180plus": 0.147
+    },
+    {
+      "agency": "DEPT OF ENVIRONMENT PROTECTION",
+      "postings": 113,
+      "positions": 175,
+      "median_days_since_posted": 29.0,
+      "median_days_in_pipeline_min": 42.0,
+      "share_reposted": 0.204,
+      "share_in_pipeline_180plus": 0.124
+    },
+    {
+      "agency": "DEPT OF DESIGN & CONSTRUCTION",
+      "postings": 148,
+      "positions": 168,
+      "median_days_since_posted": 22.5,
+      "median_days_in_pipeline_min": 33.5,
+      "share_reposted": 0.25,
+      "share_in_pipeline_180plus": 0.014
+    }
+  ],
+  "by_agency_shortest": [
+    {
+      "agency": "DEPT OF CITYWIDE ADMIN SVCS",
+      "postings": 19,
+      "positions": 20,
+      "median_days_since_posted": 11.0,
+      "median_days_in_pipeline_min": 24.0,
+      "share_reposted": 0.368,
+      "share_in_pipeline_180plus": 0.211
+    },
+    {
+      "agency": "OFFICE OF THE COMPTROLLER",
+      "postings": 15,
+      "positions": 15,
+      "median_days_since_posted": 14.0,
+      "median_days_in_pipeline_min": 22.0,
+      "share_reposted": 0.067,
+      "share_in_pipeline_180plus": 0.0
+    },
+    {
+      "agency": "HOUSING PRESERVATION & DVLPMNT",
+      "postings": 50,
+      "positions": 59,
+      "median_days_since_posted": 17.5,
+      "median_days_in_pipeline_min": 18.0,
+      "share_reposted": 0.06,
+      "share_in_pipeline_180plus": 0.0
+    },
+    {
+      "agency": "DEPARTMENT OF CORRECTION",
+      "postings": 20,
+      "positions": 626,
+      "median_days_since_posted": 17.0,
+      "median_days_in_pipeline_min": 17.0,
+      "share_reposted": 0.05,
+      "share_in_pipeline_180plus": 0.0
+    },
+    {
+      "agency": "DEPT OF PARKS & RECREATION",
+      "postings": 23,
+      "positions": 86,
+      "median_days_since_posted": 7.0,
+      "median_days_in_pipeline_min": 11.0,
+      "share_reposted": 0.261,
+      "share_in_pipeline_180plus": 0.0
+    }
+  ],
+  "by_category": [
+    {
+      "category": "Administration & Human Resources Social Services",
+      "postings": 38,
+      "positions": 68,
+      "median_days_since_posted": 35.0,
+      "median_days_in_pipeline_min": 55.0,
+      "share_reposted": 0.5,
+      "share_in_pipeline_180plus": 0.053
+    },
+    {
+      "category": "Communications & Intergovernmental Affairs",
+      "postings": 23,
+      "positions": 23,
+      "median_days_since_posted": 27.0,
+      "median_days_in_pipeline_min": 55.0,
+      "share_reposted": 0.391,
+      "share_in_pipeline_180plus": 0.043
+    },
+    {
+      "category": "Social Services",
+      "postings": 38,
+      "positions": 121,
+      "median_days_since_posted": 22.5,
+      "median_days_in_pipeline_min": 55.0,
+      "share_reposted": 0.526,
+      "share_in_pipeline_180plus": 0.237
+    },
+    {
+      "category": "Health",
+      "postings": 100,
+      "positions": 263,
+      "median_days_since_posted": 26.0,
+      "median_days_in_pipeline_min": 54.0,
+      "share_reposted": 0.38,
+      "share_in_pipeline_180plus": 0.18
+    },
+    {
+      "category": "Legal Affairs Policy",
+      "postings": 24,
+      "positions": 32,
+      "median_days_since_posted": 30.0,
+      "median_days_in_pipeline_min": 51.0,
+      "share_reposted": 0.375,
+      "share_in_pipeline_180plus": 0.083
+    },
+    {
+      "category": "Policy",
+      "postings": 54,
+      "positions": 70,
+      "median_days_since_posted": 30.5,
+      "median_days_in_pipeline_min": 49.5,
+      "share_reposted": 0.296,
+      "share_in_pipeline_180plus": 0.056
+    },
+    {
+      "category": "Public Safety",
+      "postings": 95,
+      "positions": 885,
+      "median_days_since_posted": 26.0,
+      "median_days_in_pipeline_min": 49.0,
+      "share_reposted": 0.4,
+      "share_in_pipeline_180plus": 0.063
+    },
+    {
+      "category": "Constituent Services & Community Programs",
+      "postings": 76,
+      "positions": 138,
+      "median_days_since_posted": 19.5,
+      "median_days_in_pipeline_min": 48.0,
+      "share_reposted": 0.382,
+      "share_in_pipeline_180plus": 0.039
+    },
+    {
+      "category": "Engineering",
+      "postings": 271,
+      "positions": 306,
+      "median_days_since_posted": 26.0,
+      "median_days_in_pipeline_min": 41.0,
+      "share_reposted": 0.255,
+      "share_in_pipeline_180plus": 0.074
+    },
+    {
+      "category": "Health Policy",
+      "postings": 38,
+      "positions": 38,
+      "median_days_since_posted": 21.0,
+      "median_days_in_pipeline_min": 40.5,
+      "share_reposted": 0.237,
+      "share_in_pipeline_180plus": 0.053
+    },
+    {
+      "category": "Legal Affairs",
+      "postings": 100,
+      "positions": 432,
+      "median_days_since_posted": 26.0,
+      "median_days_in_pipeline_min": 36.0,
+      "share_reposted": 0.33,
+      "share_in_pipeline_180plus": 0.07
+    },
+    {
+      "category": "Administration & Human Resources",
+      "postings": 73,
+      "positions": 498,
+      "median_days_since_posted": 26.0,
+      "median_days_in_pipeline_min": 35.0,
+      "share_reposted": 0.274,
+      "share_in_pipeline_180plus": 0.096
+    },
+    {
+      "category": "Building Operations & Maintenance",
+      "postings": 47,
+      "positions": 455,
+      "median_days_since_posted": 12.0,
+      "median_days_in_pipeline_min": 34.0,
+      "share_reposted": 0.34,
+      "share_in_pipeline_180plus": 0.043
+    },
+    {
+      "category": "Technology",
+      "postings": 114,
+      "positions": 129,
+      "median_days_since_posted": 23.5,
+      "median_days_in_pipeline_min": 32.5,
+      "share_reposted": 0.246,
+      "share_in_pipeline_180plus": 0.053
+    },
+    {
+      "category": "Finance",
+      "postings": 104,
+      "positions": 115,
+      "median_days_since_posted": 18.0,
+      "median_days_in_pipeline_min": 27.0,
+      "share_reposted": 0.173,
+      "share_in_pipeline_180plus": 0.01
+    }
+  ],
+  "by_career_level": [
+    {
+      "career_level": "Experienced (non-manager)",
+      "postings": 1040,
+      "positions": 2241,
+      "median_days_since_posted": 25.0,
+      "median_days_in_pipeline_min": 42.0,
+      "share_reposted": 0.312,
+      "share_in_pipeline_180plus": 0.089
+    },
+    {
+      "career_level": "Entry-Level",
+      "postings": 159,
+      "positions": 1475,
+      "median_days_since_posted": 25.0,
+      "median_days_in_pipeline_min": 40.0,
+      "share_reposted": 0.321,
+      "share_in_pipeline_180plus": 0.082
+    },
+    {
+      "career_level": "Manager",
+      "postings": 121,
+      "positions": 122,
+      "median_days_since_posted": 22.0,
+      "median_days_in_pipeline_min": 40.0,
+      "share_reposted": 0.331,
+      "share_in_pipeline_180plus": 0.033
+    },
+    {
+      "career_level": "Executive",
+      "postings": 26,
+      "positions": 26,
+      "median_days_since_posted": 24.0,
+      "median_days_in_pipeline_min": 31.5,
+      "share_reposted": 0.192,
+      "share_in_pipeline_180plus": 0.0
+    },
+    {
+      "career_level": "Student",
+      "postings": 36,
+      "positions": 45,
+      "median_days_since_posted": 25.5,
+      "median_days_in_pipeline_min": 31.0,
+      "share_reposted": 0.139,
+      "share_in_pipeline_180plus": 0.028
+    }
+  ],
+  "by_classification": [
+    {
+      "title_classification": "Exempt-4",
+      "postings": 36,
+      "positions": 328,
+      "median_days_since_posted": 27.5,
+      "median_days_in_pipeline_min": 85.0,
+      "share_reposted": 0.528,
+      "share_in_pipeline_180plus": 0.139
+    },
+    {
+      "title_classification": "Pending Classification-2",
+      "postings": 112,
+      "positions": 173,
+      "median_days_since_posted": 29.0,
+      "median_days_in_pipeline_min": 55.0,
+      "share_reposted": 0.455,
+      "share_in_pipeline_180plus": 0.116
+    },
+    {
+      "title_classification": "Non-Competitive-5",
+      "postings": 482,
+      "positions": 775,
+      "median_days_since_posted": 26.0,
+      "median_days_in_pipeline_min": 40.5,
+      "share_reposted": 0.27,
+      "share_in_pipeline_180plus": 0.073
+    },
+    {
+      "title_classification": "Competitive-1",
+      "postings": 741,
+      "positions": 2603,
+      "median_days_since_posted": 22.0,
+      "median_days_in_pipeline_min": 40.0,
+      "share_reposted": 0.302,
+      "share_in_pipeline_180plus": 0.078
+    },
+    {
+      "title_classification": "Labor-3",
+      "postings": 9,
+      "positions": 28,
+      "median_days_since_posted": 7.0,
+      "median_days_in_pipeline_min": 8.0,
+      "share_reposted": 0.111,
+      "share_in_pipeline_180plus": 0.0
+    }
+  ],
+  "by_salary_band": [
+    {
+      "salary_band": "<$60k",
+      "postings": 253,
+      "positions": 1514,
+      "median_days_since_posted": 21.0,
+      "median_days_in_pipeline_min": 47.0,
+      "share_reposted": 0.36,
+      "share_in_pipeline_180plus": 0.103
+    },
+    {
+      "salary_band": "$60\u201380k",
+      "postings": 356,
+      "positions": 1027,
+      "median_days_since_posted": 26.0,
+      "median_days_in_pipeline_min": 42.0,
+      "share_reposted": 0.298,
+      "share_in_pipeline_180plus": 0.065
+    },
+    {
+      "salary_band": "$80\u2013100k",
+      "postings": 384,
+      "positions": 753,
+      "median_days_since_posted": 25.0,
+      "median_days_in_pipeline_min": 41.0,
+      "share_reposted": 0.294,
+      "share_in_pipeline_180plus": 0.083
+    },
+    {
+      "salary_band": "$100\u2013130k",
+      "postings": 245,
+      "positions": 279,
+      "median_days_since_posted": 25.0,
+      "median_days_in_pipeline_min": 41.0,
+      "share_reposted": 0.278,
+      "share_in_pipeline_180plus": 0.073
+    },
+    {
+      "salary_band": "$130k+",
+      "postings": 144,
+      "positions": 336,
+      "median_days_since_posted": 20.0,
+      "median_days_in_pipeline_min": 39.0,
+      "share_reposted": 0.333,
+      "share_in_pipeline_180plus": 0.083
+    }
+  ],
+  "closed_postings_from_history": 0,
+  "closed_median_days_open": null
+}
