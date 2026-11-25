@@ -13,6 +13,16 @@ which is also the 2024-25 school year.**
 
 **Author:** Jarvis Simms · MS Data Science, NYIT · [LinkedIn](https://www.linkedin.com/in/jarvis-simms-846062136/) · [GitHub](https://github.com/jarvissimms12)
 
+## Summary
+
+| | |
+|---|---|
+| **Question** | Do NYC's worst housing conditions line up with school chronic absence and with where the city is hiring? |
+| **Data** | FY2025 NYC Open Data for all 59 community districts: 294,478 heat/hot-water complaints, 898,766 HPD violations, 17,141 evictions, PLUTO housing units; 2024-25 School Quality Reports for 1,680 schools; 1,382 live Jobs NYC postings; FY2025 citywide payroll |
+| **Method** | Server-side SoQL aggregation → SQLite → housing distress index (z-scored log rates) → school-level weighted regressions with district-clustered errors → Streamlit dashboard; 32 tests; monthly auto-refresh |
+| **Result** | The 10 most-distressed districts hold 14% of homes but **43%** of Class C violations. District housing distress tracks K-8 chronic absence (ρ = 0.65), but once school poverty is controlled it adds nothing (p = 0.71). A school's share of students in temporary housing does: **+3.4 pts** of chronic absence per 10 pts (p = 0.03). City job postings run **6.4 per 10k homes** in Manhattan vs **1.9** in the Bronx. |
+| **Takeaway** | The housing–school link runs through students' own housing instability, not neighborhood building conditions, and city hiring is concentrated away from the districts under the most strain. |
+
 | | |
 |---|---|
 | ![Housing distress index map](docs/map_housing_distress.png) | ![Chronic absence map](docs/map_chronic_absence.png) |
@@ -146,7 +156,7 @@ postings cover city government only, as a point-in-time snapshot.
 |---|---|
 | **state-of-nyc** (this repo) | Citywide, district-level hub: housing ↔ schools ↔ jobs |
 | [nyc-heat-anomalies](https://github.com/jarvissimms12/nyc-heat-anomalies) | Building-level drill-down: which buildings' heat complaints jumped far above their own history (empirical Bayes + FDR) |
-| [nyc-talent-acquisition-analytics](https://github.com/jarvissimms12/DOHMH-Health-Equity) | R/Shiny time-to-fill and EEO reporting workflow (simulated requisition data) |
+| [nyc-talent-acquisition-analytics](https://github.com/jarvissimms12/nyc-talent-acquisition-analytics) | R/Shiny time-to-fill and EEO reporting workflow (simulated requisition data) |
 
 Next steps: join the heat-anomalies building flags to this district profile; add
 HPD litigation and ownership changes (ACRIS); replace the lagged school measures
