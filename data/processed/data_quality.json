@@ -1,0 +1,39 @@
+{
+  "built_at": "2026-11-25T05:14:31+00:00",
+  "window": {
+    "start": "2024-07-01T00:00:00",
+    "end": "2025-06-30T23:59:59",
+    "school_year": "2024-25"
+  },
+  "housing": {
+    "heat_total": 294478,
+    "heat_unassigned": 34,
+    "hpd_total": 898766,
+    "hpd_unassigned": 124,
+    "evictions_total": 17141,
+    "evictions_unassigned": 943
+  },
+  "schools": {
+    "schools_in_sqr": 1680,
+    "schools_matched_to_cd": 1643,
+    "schools_with_eni": 1659
+  },
+  "jobs": {
+    "postings_unique_jobs": 1382,
+    "postings_resolved": 1279,
+    "postings_by_method": {
+      "address_text": 877,
+      "queens_hyphen_rule": 163,
+      "pluto_exact": 93,
+      "pluto_largest_building": 80,
+      "street_in_one_borough": 66,
+      "unparseable": 41,
+      "multiple": 26,
+      "no_pluto_match": 19,
+      "street_in_several_boroughs": 10,
+      "outside": 7
+    },
+    "postings_snapshot_date": "2026-11-24",
+    "payroll_active_annual_headcount": 287900
+  }
+}
