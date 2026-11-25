@@ -19,7 +19,7 @@ which is also the 2024-25 school year.**
 |---|---|
 | **Question** | Do NYC's worst housing conditions line up with school chronic absence and with where the city is hiring? |
 | **Data** | FY2025 NYC Open Data for all 59 community districts: 294,478 heat/hot-water complaints, 898,766 HPD violations, 17,141 evictions, PLUTO housing units; 2024-25 School Quality Reports for 1,680 schools; 1,382 live Jobs NYC postings; FY2025 citywide payroll |
-| **Method** | Server-side SoQL aggregation → SQLite → housing distress index (z-scored log rates) → school-level weighted regressions with district-clustered errors → Streamlit dashboard; 32 tests; monthly auto-refresh |
+| **Method** | Server-side SoQL aggregation → SQLite → housing distress index (z-scored log rates) → school-level weighted regressions with district-clustered errors → Streamlit dashboard; 4 follow-up studies; 44 tests; monthly auto-refresh |
 | **Result** | The 10 most-distressed districts hold 14% of homes but **43%** of Class C violations. District housing distress tracks K-8 chronic absence (ρ = 0.65), but once school poverty is controlled it adds nothing (p = 0.71). A school's share of students in temporary housing does: **+3.4 pts** of chronic absence per 10 pts (p = 0.03). City job postings run **6.4 per 10k homes** in Manhattan vs **1.9** in the Bronx. |
 | **Takeaway** | The housing–school link runs through students' own housing instability, not neighborhood building conditions, and city hiring is concentrated away from the districts under the most strain. |
 
@@ -79,6 +79,17 @@ and 0.7 in Brooklyn. Bronx postings also pay less: a median posted salary of
 "work location borough" reflects administrative coding, not where people work,
 so this project uses payroll only for headcount and pay, never for geography.
 
+## Follow-up studies
+
+Each study picks up a question the main analysis left open. Every one has its own README with a summary, method, results and caveats.
+
+| Study | Question | Result |
+|---|---|---|
+| [1. School bus disruptions](studies/01_bus_delays_absence/) | Do bus breakdowns and delays explain the Rockaways' unexplained absence? | Bus disruption is linked to absence citywide (25th→75th percentile ≈ **+4 pts**, p < 0.001), and the Rockaways get **75% more** morning incidents per student with **66-minute** average delays (vs 44). But buses explain only **0.3 of the Rockaways' 10.7-point** gap. |
+| [2. Absence early warning](studies/02_absence_early_warning/) | Can we flag schools whose chronic absence will rise next year? | Levels are very persistent (model error 3.83 pts vs 3.93 for "same as last year"), but the top 10% riskiest schools rose 5+ pts at **17.2%, 2.2× the base rate** on a held-out year. K-8 chronic absence: 18.5% (2015-16) → **35.2%** peak (2021-22) → 30.0% (2024-25). |
+| [3. Hospital length of stay](studies/03_hospital_length_of_stay/) | Which NYC hospitals run long or short for their case mix, and do stays differ by race or payer? | Pipeline built and verified on synthetic data with planted effects. It finds exactly the planted hospitals, and testing caught two methodology bugs. **Real SPARCS run pending** (state portal not reachable from the build environment). |
+| [4. Shelter and schools](studies/04_shelter_and_schools/) | How has the shelter population changed, and do districts hosting families show more unexplained absence? | DHS census **~58k (2019) → 89,558 peak (Dec 2023) → 83,426 now**; families-with-children shelter population **+57%** since FY2019. Jamaica and Brownsville host the most families **and** have absence well above prediction, but across all districts the link is weak (ρ = 0.15). |
+
 ## Interactive dashboard
 
 ```bash
@@ -113,7 +124,7 @@ app.py             Streamlit dashboard
 pip install -r requirements.txt
 python build.py                      # ~5-10 min, all public APIs, no key needed
 python analysis/run_analysis.py      # models + figures
-pytest -q                            # 32 offline tests
+pytest -q                            # 44 offline tests
 streamlit run app.py
 ```
 
@@ -171,6 +182,7 @@ state-of-nyc/
 ├── src/                      # config, SODA client, geography helpers
 ├── etl/                      # housing, schools, jobs, geography
 ├── analysis/run_analysis.py  # index, models, figures
+├── studies/                  # follow-up studies 1-4, each with README, run.py, results
 ├── data/processed/           # committed outputs (CSV, GeoJSON, JSON)
 ├── docs/                     # figures, results.json, METHODS.md
 ├── tests/test_pipeline.py    # offline tests

@@ -1,0 +1,43 @@
+{
+  "rows": {
+    "train": 4962,
+    "valid": 1290,
+    "test": 1280
+  },
+  "test_transition": "2023-24 -> 2024-25",
+  "test_share_rising_5pts": 0.08,
+  "test_mean_change_pts": -1.18,
+  "boosting_rounds_chosen_on_validation": 200,
+  "metrics": {
+    "persistence (next year = this year)": {
+      "mae_pts": 3.93,
+      "rise_auc": 0.5,
+      "precision_top10pct_rise": null
+    },
+    "mean reversion (linear on this year)": {
+      "mae_pts": 3.85,
+      "rise_auc": 0.496,
+      "precision_top10pct_rise": 0.086
+    },
+    "gradient boosting (all features)": {
+      "mae_pts": 3.83,
+      "rise_auc": 0.647,
+      "precision_top10pct_rise": 0.172
+    }
+  },
+  "drop_column_mae_increase_pts": {
+    "rate": 0.217,
+    "change_prev": 0.143,
+    "district": 0.09,
+    "eni_2122": 0.076,
+    "boro_code": 0.038,
+    "is_middle": 0.024,
+    "is_k8": -0.012,
+    "sth_rate": -0.024,
+    "log_n": -0.065,
+    "attendance": -0.086
+  },
+  "watch_list_schools": 1307,
+  "excluded_implausible_school_years": "rate < 1% (53 school-years)",
+  "train_mean_change_pts": -0.14
+}

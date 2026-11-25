@@ -58,8 +58,8 @@ k8 = schools.dropna(subset=["chronic_absence_ems", "n_chronic_ems"])
 c3.metric("Chronic absence, K-8", f"{(k8['chronic_absence_ems'] * k8['n_chronic_ems']).sum() / k8['n_chronic_ems'].sum():.1%}")
 c4.metric("Open city job postings", f"{R['jobs']['unique_jobs']:,}", help=f"Snapshot {R['jobs']['snapshot_date']}")
 
-tab_map, tab_link, tab_jobs, tab_district, tab_data = st.tabs(
-    ["Map", "Housing ↔ schools", "City jobs", "District profile", "Data & methods"])
+tab_map, tab_link, tab_jobs, tab_district, tab_studies, tab_data = st.tabs(
+    ["Map", "Housing ↔ schools", "City jobs", "District profile", "Follow-up studies", "Data & methods"])
 
 with tab_map:
     label = st.selectbox("Measure", list(METRICS))
@@ -152,6 +152,24 @@ with tab_district:
     st.dataframe(s[["dbn", "school_name", "school_type", "chronic_absence_rate", "eni_2122"]]
                  .style.format({"chronic_absence_rate": "{:.1%}", "eni_2122": "{:.0%}"}, na_rep="—"),
                  hide_index=True, width="stretch")
+
+with tab_studies:
+    STUDIES = [
+        ("01_bus_delays_absence", "1. School bus disruptions and chronic absence", ["bus_vs_absence.png"]),
+        ("02_absence_early_warning", "2. Early warning for rising chronic absence", ["early_warning.png"]),
+        ("04_shelter_and_schools", "4. NYC's shelter population and its schools",
+         ["shelter_census_trend.png", "shelter_vs_absence_gap.png"]),
+        ("03_hospital_length_of_stay", "3. Hospital length of stay (real-data run pending)", []),
+    ]
+    for folder, title, images in STUDIES:
+        d = ROOT / "studies" / folder
+        with st.expander(title, expanded=folder.startswith("01")):
+            readme = (d / "README.md").read_text()
+            summary = readme.split("## Summary", 1)[-1].split("\n## ", 1)[0]
+            st.markdown(summary)
+            for img in images:
+                if (d / img).exists():
+                    st.image(str(d / img), width="stretch")
 
 with tab_data:
     st.markdown((ROOT / "docs" / "METHODS.md").read_text())

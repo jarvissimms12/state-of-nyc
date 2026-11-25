@@ -25,11 +25,14 @@ jobs:
         env:
           SODA_APP_TOKEN: ${{ secrets.SODA_APP_TOKEN }}
       - run: python analysis/run_analysis.py
+      - run: python studies/01_bus_delays_absence/run.py
+      - run: python studies/02_absence_early_warning/run.py
+      - run: python studies/04_shelter_and_schools/run.py
       - run: pytest -q
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add data/processed docs
+          git add data/processed docs studies
           git diff --cached --quiet || git commit -m "Monthly data refresh $(date -u +%Y-%m-%d)"
           git push

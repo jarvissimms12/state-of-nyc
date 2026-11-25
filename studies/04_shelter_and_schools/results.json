@@ -1,0 +1,158 @@
+{
+  "daily_range": [
+    "2013-08-21",
+    "2026-11-23"
+  ],
+  "census_points": {
+    "2014-01-01": {
+      "date": "2014-01-01",
+      "total": 50689,
+      "children": 21919
+    },
+    "2019-06-30": {
+      "date": "2019-06-30",
+      "total": 57910,
+      "children": 20740
+    },
+    "2022-06-30": {
+      "date": "2022-06-30",
+      "total": 47440,
+      "children": 15685
+    },
+    "latest": {
+      "date": "2026-11-23",
+      "total": 83426,
+      "children": 27493
+    }
+  },
+  "peak": {
+    "date": "2023-12-10",
+    "total": 89558,
+    "children": 33139
+  },
+  "district_census_range": [
+    "2018-07-31",
+    "2026-10-31"
+  ],
+  "family_shelter_unassigned_share": 0.0009,
+  "fy25_family_individuals_total": 62142,
+  "fy19_family_individuals_total": 39483,
+  "districts_with_any_family_shelter_fy25": 53,
+  "top10_districts_share": 0.533,
+  "top10_districts": [
+    {
+      "district": "Queens CD 12",
+      "cd_name": "Jamaica, St. Albans, Hollis",
+      "family_shelter_fy25": 8294.667,
+      "family_shelter_per_1k": 97.391,
+      "chronic_absence_ems": 0.383,
+      "absence_gap": 0.087
+    },
+    {
+      "district": "Queens CD 1",
+      "cd_name": "Astoria, Long Island City",
+      "family_shelter_fy25": 5521.167,
+      "family_shelter_per_1k": 57.276,
+      "chronic_absence_ems": 0.309,
+      "absence_gap": 0.018
+    },
+    {
+      "district": "Brooklyn CD 16",
+      "cd_name": "Brownsville, Ocean Hill",
+      "family_shelter_fy25": 3030.833,
+      "family_shelter_per_1k": 73.836,
+      "chronic_absence_ems": 0.428,
+      "absence_gap": 0.079
+    },
+    {
+      "district": "Bronx CD 6",
+      "cd_name": "East Tremont, Belmont",
+      "family_shelter_fy25": 2991.5,
+      "family_shelter_per_1k": 81.278,
+      "chronic_absence_ems": 0.398,
+      "absence_gap": 0.028
+    },
+    {
+      "district": "Manhattan CD 5",
+      "cd_name": "Midtown Business District",
+      "family_shelter_fy25": 2961.917,
+      "family_shelter_per_1k": 64.374,
+      "chronic_absence_ems": 0.177,
+      "absence_gap": -0.05
+    },
+    {
+      "district": "Queens CD 3",
+      "cd_name": "Jackson Heights, North Corona",
+      "family_shelter_fy25": 2592.333,
+      "family_shelter_per_1k": 47.833,
+      "chronic_absence_ems": 0.227,
+      "absence_gap": -0.087
+    },
+    {
+      "district": "Bronx CD 4",
+      "cd_name": "Highbridge, Concourse Village",
+      "family_shelter_fy25": 2423.333,
+      "family_shelter_per_1k": 41.52,
+      "chronic_absence_ems": 0.349,
+      "absence_gap": -0.022
+    },
+    {
+      "district": "Brooklyn CD 17",
+      "cd_name": "East Flatbush, Rugby, Farragut",
+      "family_shelter_fy25": 1913.583,
+      "family_shelter_per_1k": 30.753,
+      "chronic_absence_ems": 0.305,
+      "absence_gap": -0.007
+    },
+    {
+      "district": "Bronx CD 9",
+      "cd_name": "Soundview, Parkchester",
+      "family_shelter_fy25": 1773.083,
+      "family_shelter_per_1k": 26.358,
+      "chronic_absence_ems": 0.353,
+      "absence_gap": -0.003
+    },
+    {
+      "district": "Manhattan CD 4",
+      "cd_name": "Chelsea, Clinton",
+      "family_shelter_fy25": 1636.0,
+      "family_shelter_per_1k": 18.432,
+      "chronic_absence_ems": 0.34,
+      "absence_gap": 0.064
+    }
+  ],
+  "spearman": {
+    "shelter_rate_vs_sth_2021": [
+      0.538,
+      0.0
+    ],
+    "shelter_rate_vs_chronic_absence_ems": [
+      0.418,
+      0.001
+    ],
+    "shelter_rate_vs_absence_gap": [
+      0.154,
+      0.244
+    ],
+    "shelter_rate_vs_housing_distress": [
+      0.413,
+      0.001
+    ]
+  },
+  "absence_gap_on_log_shelter": {
+    "coef": 0.0128,
+    "p": 0.0669,
+    "r2": 0.068
+  },
+  "absence_on_eni_and_log_shelter": {
+    "shelter_coef": 0.0143,
+    "shelter_p": 0.0741,
+    "r2": 0.468
+  },
+  "rockaways": {
+    "family_shelter_fy25": 662,
+    "per_1k_units": 13.1,
+    "rank_of_59": 26,
+    "absence_gap": 0.121
+  }
+}

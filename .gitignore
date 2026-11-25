@@ -5,3 +5,5 @@ data/raw/
 data/processed/state_of_nyc.db
 .venv/
 .streamlit/secrets.toml
+studies/03_hospital_length_of_stay/*.csv
+!studies/03_hospital_length_of_stay/results/*.csv

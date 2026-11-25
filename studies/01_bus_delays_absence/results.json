@@ -1,0 +1,58 @@
+{
+  "school_year": "2024-2025",
+  "incidents_total": 75563,
+  "incidents_school_age": 67710,
+  "school_links": 187601,
+  "school_links_matched": 77029,
+  "match_rate": 0.411,
+  "share_special_ed_runs": 0.824,
+  "share_delays_over_60_min": 0.315,
+  "top_reasons": {
+    "Heavy Traffic": 0.694,
+    "Other": 0.172,
+    "Problem Run": 0.05,
+    "Mechanical Problem": 0.035,
+    "Late return from Field Trip": 0.014
+  },
+  "n_schools_model": 1287,
+  "bus_coef_per_log_unit": 0.0167,
+  "bus_ci95": [
+    0.0104,
+    0.023
+  ],
+  "bus_p": 0.0,
+  "r2_without_bus": 0.377,
+  "r2_with_bus": 0.399,
+  "rockaways_gap_controls_only": 0.1066,
+  "rockaways_gap_ci95": [
+    0.0909,
+    0.1223
+  ],
+  "rockaways_gap_with_bus": 0.1037,
+  "rockaways_gap_with_bus_ci95": [
+    0.0884,
+    0.1191
+  ],
+  "exposure": [
+    {
+      "area": "Rest of NYC",
+      "schools": 1266.0,
+      "students": 609882.0,
+      "am_incidents_per_100_students": 8.4188,
+      "share_schools_with_any_am_incident": 0.7646,
+      "chronic_absence_k8": 0.2977
+    },
+    {
+      "area": "Rockaways (Queens CD 14)",
+      "schools": 21.0,
+      "students": 9267.0,
+      "am_incidents_per_100_students": 14.6649,
+      "share_schools_with_any_am_incident": 0.7619,
+      "chronic_absence_k8": 0.4371
+    }
+  ],
+  "mean_delay_minutes": {
+    "rockaways": 66.1,
+    "rest_of_nyc": 43.6
+  }
+}
