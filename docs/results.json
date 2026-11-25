@@ -1,0 +1,427 @@
+{
+  "data_quality": {
+    "built_at": "2026-11-25T05:14:31+00:00",
+    "window": {
+      "start": "2024-07-01T00:00:00",
+      "end": "2025-06-30T23:59:59",
+      "school_year": "2024-25"
+    },
+    "housing": {
+      "heat_total": 294478,
+      "heat_unassigned": 34,
+      "hpd_total": 898766,
+      "hpd_unassigned": 124,
+      "evictions_total": 17141,
+      "evictions_unassigned": 943
+    },
+    "schools": {
+      "schools_in_sqr": 1680,
+      "schools_matched_to_cd": 1643,
+      "schools_with_eni": 1659
+    },
+    "jobs": {
+      "postings_unique_jobs": 1382,
+      "postings_resolved": 1279,
+      "postings_by_method": {
+        "address_text": 877,
+        "queens_hyphen_rule": 163,
+        "pluto_exact": 93,
+        "pluto_largest_building": 80,
+        "street_in_one_borough": 66,
+        "unparseable": 41,
+        "multiple": 26,
+        "no_pluto_match": 19,
+        "street_in_several_boroughs": 10,
+        "outside": 7
+      },
+      "postings_snapshot_date": "2026-11-24",
+      "payroll_active_annual_headcount": 287900
+    }
+  },
+  "districts": {
+    "spearman": {
+      "housing_vs_chronic_absence_ems": 0.65,
+      "housing_vs_eni": 0.88,
+      "housing_vs_sth_2021": 0.83,
+      "housing_vs_grad_rate": -0.19,
+      "eni_vs_chronic_absence_ems": 0.66
+    },
+    "top10_housing_distress": [
+      {
+        "district": "Bronx CD 4",
+        "cd_name": "Highbridge, Concourse Village",
+        "housing_distress_index": 1.653,
+        "heat_hw_per_1k": 255.873,
+        "class_c_per_1k": 322.402,
+        "evictions_per_1k": 13.484,
+        "chronic_absence_ems": 0.349
+      },
+      {
+        "district": "Bronx CD 6",
+        "cd_name": "East Tremont, Belmont",
+        "housing_distress_index": 1.622,
+        "heat_hw_per_1k": 220.181,
+        "class_c_per_1k": 373.119,
+        "evictions_per_1k": 12.797,
+        "chronic_absence_ems": 0.398
+      },
+      {
+        "district": "Bronx CD 7",
+        "cd_name": "Bedford Park, Norwood, Fordham",
+        "housing_distress_index": 1.611,
+        "heat_hw_per_1k": 275.282,
+        "class_c_per_1k": 267.204,
+        "evictions_per_1k": 13.169,
+        "chronic_absence_ems": 0.377
+      },
+      {
+        "district": "Bronx CD 5",
+        "cd_name": "University Hts., Fordham, Mt. Hope",
+        "housing_distress_index": 1.573,
+        "heat_hw_per_1k": 228.622,
+        "class_c_per_1k": 314.203,
+        "evictions_per_1k": 12.528,
+        "chronic_absence_ems": 0.341
+      },
+      {
+        "district": "Bronx CD 2",
+        "cd_name": "Hunts Point, Longwood",
+        "housing_distress_index": 1.457,
+        "heat_hw_per_1k": 216.008,
+        "class_c_per_1k": 283.899,
+        "evictions_per_1k": 10.817,
+        "chronic_absence_ems": 0.367
+      },
+      {
+        "district": "Bronx CD 3",
+        "cd_name": "Morrisania, Crotona Park East",
+        "housing_distress_index": 1.322,
+        "heat_hw_per_1k": 184.435,
+        "class_c_per_1k": 208.131,
+        "evictions_per_1k": 11.306,
+        "chronic_absence_ems": 0.348
+      },
+      {
+        "district": "Manhattan CD 12",
+        "cd_name": "Washington Heights, Inwood",
+        "housing_distress_index": 1.247,
+        "heat_hw_per_1k": 248.211,
+        "class_c_per_1k": 189.097,
+        "evictions_per_1k": 7.921,
+        "chronic_absence_ems": 0.323
+      },
+      {
+        "district": "Manhattan CD 10",
+        "cd_name": "Central Harlem",
+        "housing_distress_index": 1.217,
+        "heat_hw_per_1k": 242.007,
+        "class_c_per_1k": 179.987,
+        "evictions_per_1k": 7.835,
+        "chronic_absence_ems": 0.404
+      },
+      {
+        "district": "Bronx CD 12",
+        "cd_name": "Wakefield, Williamsbridge",
+        "housing_distress_index": 1.203,
+        "heat_hw_per_1k": 225.762,
+        "class_c_per_1k": 149.263,
+        "evictions_per_1k": 9.2,
+        "chronic_absence_ems": 0.359
+      },
+      {
+        "district": "Brooklyn CD 17",
+        "cd_name": "East Flatbush, Rugby, Farragut",
+        "housing_distress_index": 1.038,
+        "heat_hw_per_1k": 133.694,
+        "class_c_per_1k": 166.351,
+        "evictions_per_1k": 9.032,
+        "chronic_absence_ems": 0.305
+      }
+    ],
+    "top10_share_of_class_c": 0.427,
+    "top10_share_of_units": 0.141,
+    "absence_above_expected": [
+      {
+        "district": "Queens CD 14",
+        "cd_name": "The Rockaways, Broad Channel",
+        "chronic_absence_ems": 0.437,
+        "expected_absence": 0.316,
+        "absence_gap": 0.121,
+        "housing_distress_index": 0.276
+      },
+      {
+        "district": "Brooklyn CD 3",
+        "cd_name": "Bedford Stuyvesant",
+        "chronic_absence_ems": 0.434,
+        "expected_absence": 0.328,
+        "absence_gap": 0.106,
+        "housing_distress_index": 0.267
+      },
+      {
+        "district": "Queens CD 12",
+        "cd_name": "Jamaica, St. Albans, Hollis",
+        "chronic_absence_ems": 0.383,
+        "expected_absence": 0.296,
+        "absence_gap": 0.087,
+        "housing_distress_index": 0.101
+      },
+      {
+        "district": "Manhattan CD 11",
+        "cd_name": "East Harlem",
+        "chronic_absence_ems": 0.431,
+        "expected_absence": 0.346,
+        "absence_gap": 0.085,
+        "housing_distress_index": 0.388
+      },
+      {
+        "district": "Brooklyn CD 16",
+        "cd_name": "Brownsville, Ocean Hill",
+        "chronic_absence_ems": 0.428,
+        "expected_absence": 0.349,
+        "absence_gap": 0.079,
+        "housing_distress_index": 0.7
+      },
+      {
+        "district": "Staten Island CD 1",
+        "cd_name": "Stapleton, Port Richmond",
+        "chronic_absence_ems": 0.38,
+        "expected_absence": 0.315,
+        "absence_gap": 0.065,
+        "housing_distress_index": 0.028
+      },
+      {
+        "district": "Manhattan CD 7",
+        "cd_name": "West Side, Upper West Side",
+        "chronic_absence_ems": 0.277,
+        "expected_absence": 0.213,
+        "absence_gap": 0.065,
+        "housing_distress_index": -0.759
+      },
+      {
+        "district": "Manhattan CD 4",
+        "cd_name": "Chelsea, Clinton",
+        "chronic_absence_ems": 0.34,
+        "expected_absence": 0.275,
+        "absence_gap": 0.064,
+        "housing_distress_index": -0.612
+      }
+    ],
+    "absence_below_expected": [
+      {
+        "district": "Brooklyn CD 12",
+        "cd_name": "Borough Park, Ocean Parkway",
+        "chronic_absence_ems": 0.198,
+        "expected_absence": 0.343,
+        "absence_gap": -0.144,
+        "housing_distress_index": -0.31
+      },
+      {
+        "district": "Brooklyn CD 10",
+        "cd_name": "Bay Ridge, Dyker Heights",
+        "chronic_absence_ems": 0.155,
+        "expected_absence": 0.298,
+        "absence_gap": -0.143,
+        "housing_distress_index": -0.39
+      },
+      {
+        "district": "Queens CD 7",
+        "cd_name": "Flushing, Bay Terrace",
+        "chronic_absence_ems": 0.174,
+        "expected_absence": 0.285,
+        "absence_gap": -0.111,
+        "housing_distress_index": -0.663
+      },
+      {
+        "district": "Queens CD 11",
+        "cd_name": "Bayside, Douglaston, Little Neck",
+        "chronic_absence_ems": 0.126,
+        "expected_absence": 0.228,
+        "absence_gap": -0.102,
+        "housing_distress_index": -1.587
+      },
+      {
+        "district": "Queens CD 4",
+        "cd_name": "Elmhurst, South Corona",
+        "chronic_absence_ems": 0.248,
+        "expected_absence": 0.341,
+        "absence_gap": -0.094,
+        "housing_distress_index": 0.285
+      }
+    ]
+  },
+  "school_models": {
+    "n_schools": 1287,
+    "n_districts": 59,
+    "housing_only": {
+      "coef_per_sd": 0.0515,
+      "ci95": [
+        0.039,
+        0.064
+      ],
+      "p": 0.0,
+      "r2": 0.134
+    },
+    "housing_plus_eni": {
+      "housing_coef_per_sd": -0.0041,
+      "housing_ci95": [
+        -0.0258,
+        0.0176
+      ],
+      "housing_p": 0.71,
+      "eni_coef_per_10pts": 0.0356,
+      "r2": 0.307
+    },
+    "temporary_housing": {
+      "n_schools": 1044,
+      "r2_eni_only": 0.297,
+      "sth_coef_per_10pts": 0.0336,
+      "sth_ci95": [
+        0.0035,
+        0.0637
+      ],
+      "sth_p": 0.0284,
+      "eni_coef_per_10pts": 0.0259,
+      "r2": 0.322,
+      "housing_coef_when_added": -0.0007,
+      "housing_p_when_added": 0.9481
+    }
+  },
+  "boroughs": [
+    {
+      "borough": "Bronx",
+      "residential_units": 594265.0,
+      "heat_hw_per_1k": 180.1503,
+      "class_c_per_1k": 197.9369,
+      "evictions_per_1k": 9.553,
+      "chronic_absence_ems": 0.3445,
+      "share_units_in_top_quartile_distress": 0.7461,
+      "postings": 114,
+      "positions": 623,
+      "median_salary": 72945.0,
+      "entry_level_positions": 229,
+      "positions_per_10k_units": 10.4835,
+      "postings_per_10k_units": 1.9183,
+      "share_of_city_positions": 0.1767,
+      "share_of_city_units": 0.159
+    },
+    {
+      "borough": "Brooklyn",
+      "residential_units": 1116326.0,
+      "heat_hw_per_1k": 67.9694,
+      "class_c_per_1k": 74.7004,
+      "evictions_per_1k": 3.714,
+      "chronic_absence_ems": 0.2923,
+      "share_units_in_top_quartile_distress": 0.1534,
+      "postings": 83,
+      "positions": 356,
+      "median_salary": 83033.5,
+      "entry_level_positions": 123,
+      "positions_per_10k_units": 3.189,
+      "postings_per_10k_units": 0.7435,
+      "share_of_city_positions": 0.101,
+      "share_of_city_units": 0.2986
+    },
+    {
+      "borough": "Manhattan",
+      "residential_units": 956109.0,
+      "heat_hw_per_1k": 72.5315,
+      "class_c_per_1k": 53.4855,
+      "evictions_per_1k": 2.7173,
+      "chronic_absence_ems": 0.3087,
+      "share_units_in_top_quartile_distress": 0.1932,
+      "postings": 616,
+      "positions": 1093,
+      "median_salary": 86582.5,
+      "entry_level_positions": 239,
+      "positions_per_10k_units": 11.4318,
+      "postings_per_10k_units": 6.4428,
+      "share_of_city_positions": 0.3101,
+      "share_of_city_units": 0.2558
+    },
+    {
+      "borough": "Queens",
+      "residential_units": 891042.0,
+      "heat_hw_per_1k": 43.5973,
+      "class_c_per_1k": 38.8893,
+      "evictions_per_1k": 3.6149,
+      "chronic_absence_ems": 0.2718,
+      "share_units_in_top_quartile_distress": 0.0,
+      "postings": 444,
+      "positions": 1416,
+      "median_salary": 84645.5,
+      "entry_level_positions": 781,
+      "positions_per_10k_units": 15.8915,
+      "postings_per_10k_units": 4.9829,
+      "share_of_city_positions": 0.4017,
+      "share_of_city_units": 0.2384
+    },
+    {
+      "borough": "Staten Island",
+      "residential_units": 180516.0,
+      "heat_hw_per_1k": 18.3696,
+      "class_c_per_1k": 24.6128,
+      "evictions_per_1k": 3.0801,
+      "chronic_absence_ems": 0.2779,
+      "share_units_in_top_quartile_distress": 0.0,
+      "postings": 22,
+      "positions": 37,
+      "median_salary": 71066.5,
+      "entry_level_positions": 12,
+      "positions_per_10k_units": 2.0497,
+      "postings_per_10k_units": 1.2187,
+      "share_of_city_positions": 0.0105,
+      "share_of_city_units": 0.0483
+    }
+  ],
+  "jobs": {
+    "snapshot_date": "2026-11-24",
+    "unique_jobs": 1382,
+    "resolved_jobs": 1279,
+    "resolved_share": 0.925,
+    "largest_postings": [
+      {
+        "agency": "DEPARTMENT OF CORRECTION",
+        "business_title": "Correction Officer",
+        "number_of_positions": 600,
+        "boro_code": 4.0
+      },
+      {
+        "agency": "NYC HOUSING AUTHORITY",
+        "business_title": "Housing Assistant",
+        "number_of_positions": 99,
+        "boro_code": 2.0
+      },
+      {
+        "agency": "NYC HOUSING AUTHORITY",
+        "business_title": "Housing Assistant",
+        "number_of_positions": 99,
+        "boro_code": 1.0
+      },
+      {
+        "agency": "NYC HOUSING AUTHORITY",
+        "business_title": "Housing Assistant",
+        "number_of_positions": 99,
+        "boro_code": 3.0
+      },
+      {
+        "agency": "NYC HOUSING AUTHORITY",
+        "business_title": "MAINTENANCE WORKER",
+        "number_of_positions": 99,
+        "boro_code": 1.0
+      }
+    ],
+    "payroll_fy2025_active_annual": 287900,
+    "payroll_doe_coded_manhattan": [
+      {
+        "agency_name": "DEPT OF ED PEDAGOGICAL",
+        "headcount": 96161,
+        "share_coded_manhattan": 1.0
+      },
+      {
+        "agency_name": "DEPT OF ED PARA PROFESSIONALS",
+        "headcount": 24994,
+        "share_coded_manhattan": 1.0
+      }
+    ]
+  }
+}
